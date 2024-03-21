@@ -1,0 +1,115 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+  
+    &__container {
+      // width: 60%;
+    
+      display: flex;
+      align-items: center;
+      height: inherit;
+      padding: 0px 20px;
+      flex: 1;
+  
+      &__logo {
+        width: 60%; /* Set width to 60% */
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        // color: var(--yellow-theme-main-color);
+        cursor: pointer;
+      }
+  
+      &__menu {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        // margin: 0 auto;
+        display: flex;
+        list-style: none;
+        text-align: center;
+        // color: white;
+  
+        &__item {       
+          line-height: 40px;
+          margin-right: 1.5rem;
+          font-size: 1.6rem;
+  
+          &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 0;
+            background: transparent;
+            transition: all 0.5s ease;
+          }
+  
+          &:hover::after {
+            width: 100%;
+            background: rgb(253, 187, 18);
+          }
+  
+          &__links {
+            text-decoration: none;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  
+  .nav-icon {
+    display:none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar__container{
+      &__logo {
+        width: 100%; /* Set width to 60% */
+        
+      }
+  
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 10;
+      transition: all 0.5s ease;
+  
+      &.active {
+        background: var(--navbar-bg-color);
+        left: 0px;
+        opacity: 1;
+      }
+  
+      &__item {
+        border-bottom: 1px solid #282828;
+        margin: 0px;
+        padding: 20px 0px;
+  
+        &__links {
+          color: rgb(253, 187, 18);
+        }
+      }
+    }
+  }
+    .nav-icon {
+      display: block;
+      cursor: pointer;
+      color: rgb(253, 187, 18);
+      padding-right: 20px;
+    }
+  }

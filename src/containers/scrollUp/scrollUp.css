@@ -1,0 +1,59 @@
+.scrollup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  right: 2.5rem;
+  bottom: -20%;
+  background-color: darkblue;
+  opacity: 0.8;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  width: 40px;
+  height: 50px;
+}
+
+.scrollup__icon {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--container-color);
+  margin-top: 10px;
+}
+
+.scrollup:hover {
+  background-color: green;
+}
+
+/* show scroll class */
+.show-scroll {
+  bottom: 3rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+
+@media screen and (max-width: 992px) {
+  .scrollup {
+    right: 1.5rem;
+  }
+  .scrollup__icon {
+    font-size: 1.25rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .show-scroll {
+    bottom: 4rem;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .scrollup {
+    right: 1rem;
+  }
+}

@@ -1,0 +1,279 @@
+.contact {
+  background-color: #EA0087;
+  color: white;
+}
+
+.contact__wrapper {
+  display: flex;
+  // padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact__form-container {
+  width: 100%; 
+  // margin-top: 200px ;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 100px;
+
+}
+
+.contact__header-text {
+  color: var(--yellow-theme-sub-text-color);
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.5px;
+  position: absolute;
+  left: 50%;
+  top: -40px; 
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+
+.cooperation-icon{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 100px;
+font-weight: bold;
+color: white;
+
+}
+
+.contact__formcontrolswrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+}
+
+.inputName,
+.inputEmail,
+.inputDescription {
+  position: relative;
+ margin-top: 80px;
+
+}
+
+.inputName input,
+.inputEmail input,
+.inputDescription textarea {
+  width: 600px;
+  // margin-top: 30px;
+  margin: 0 auto;
+  border: 2px solid var(--yellow-theme-main-color);
+  border-radius: 20px;
+  padding: 16px 12px;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  color: var(--yellow-theme-sub-text-color);
+}
+
+.inputName label,
+.inputEmail label,
+.inputDescription label {
+  font-weight: 500;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  transition: all 0.2s ease;
+  color: var(--yellow-theme-sub-text-color);
+  font-size: 16px;
+}
+
+// .inputName label,
+// .inputEmail label,
+// .inputDescription label {
+ 
+//   transform: translate(-50%, -50%);
+//   transition: top 0.3s, left 0.3s;
+// }
+
+.inputName input:focus + label,
+.inputEmail input:focus + label,
+.inputDescription textarea:focus + label {
+  top: var(--yellow-theme-background-color);
+  left: 0;
+}
+
+
+
+.contact__text-container {
+  width: calc(50% - 10px);
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__image {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  transform: scale(1.2);
+}
+
+// .contact__image::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 100%);
+//   border-radius: 50px;
+//   z-index: 1;
+//   transform: perspective(1000px) rotateY(-20deg);
+
+// }
+
+.contact__text {
+  padding: 20px;
+  width: 90%;
+  text-align: justify;
+}
+
+
+
+.contact__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.contact__wrapper__form-container__header-text {
+  width: 90%;
+  color: var(--yellow-theme-sub-text-color);
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.5px;
+  position: absolute;
+  left: 50%;
+  top: 20px; 
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid var(--yellow-theme-main-color);
+  text-align: center; 
+  // position: absolute;
+  left: 50%;
+  top: 20px; 
+  transform: translateX(-50%);
+
+}
+
+.contact__wrapper__form-container__header-text::before,
+.contact__wrapper__form-container__header-text::after {
+  // position: absolute;
+  content: "";
+  width: 2px;
+  height: 5px;
+  background-color: var(--yellow-theme-main-color);
+  bottom: -1px;
+}
+
+.contact__wrapper__form-container__header-text::before {
+  left: 0;
+}
+
+.contact__wrapper__form-container__header-text::after {
+  right: 0;
+}
+
+
+
+.button1 {
+  cursor: pointer;
+  padding: 10px 70px;
+  font-size: 2rem;
+  background: transparent;
+  color: var(--yellow-theme-main-color);
+  border: 1.5px solid var(--yellow-theme-main-color);
+  border-radius: 10px;
+  font-weight: 500; 
+  position: absolute;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 20px;
+
+  &:hover {
+    color: #000;
+    background: var(--yellow-theme-main-color);
+  }
+}
+
+
+
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  .contact__wrapper {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .contact__text-container {
+    width: 100%; /* Set width to 100% for mobile */
+    margin-top: 20px; /* Add margin between text/image and heading */
+    order: -1; /* Move text container to the top */
+  }
+
+  .contact__wrapper__form-container {
+    width: 80%; /* Set width to 100% for mobile */
+    padding: 20px; /* Retain existing padding */
+    text-align: center; /* Center the content */
+    order: 0; /* Keep form container in the middle */
+    margin-bottom: 100px;
+  }
+
+  .contact__wrapper__form-container__header-text {
+    color: var(--yellow-theme-sub-text-color);
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0.5px;
+    position: absolute;
+    left: 50%;
+    top: 20px; 
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+    order: 1; /* Move heading after text container */
+  }
+
+  .button1 {
+    display: block; /* Display button as block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+    margin-top: 20px; /* Add margin between form and button */
+    order: 2; /* Move button after form */
+  }
+
+  .inputName input,
+  .inputEmail input,
+  .inputDescription textarea {
+    width: 100% ; /* Set width to 100% minus margins for mobile */
+    margin: 0 auto ; /* Add margin bottom and center horizontally */
+    width: 350px;
+  }
+}

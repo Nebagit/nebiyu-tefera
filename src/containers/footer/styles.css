@@ -1,0 +1,71 @@
+.footer__col2 a,
+.footer__col3 a,
+.footer__col4 a {
+  text-decoration: none; /* Remove underline */
+  color: grey; /* Change text color to black */
+}
+
+.footer__col2 ul,
+.footer__col3 ul,
+.footer__col4 ul {
+  list-style: none; /* Remove list style */
+}
+.container {
+  border-radius: 30px;
+}
+.cr1 {
+  text-align: center;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center align horizontally */
+  height: 100%;
+}
+.cr2 {
+  text-align: center;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center align horizontally */
+  height: 100%;
+}
+.cr3 {
+  text-align: center;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center align horizontally */
+  height: 100%;
+}
+.home__icons {
+  display: flex; /* Display icons in a row */
+  justify-content: center; /* Center the icons horizontally */
+  margin-right: 10px;
+}
+
+.contact-icon {
+  font-size: 50px;
+  color: green;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.footer__col1 {
+  margin-left: 50px;
+}
+
+.copyright {
+  text-align: center;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center align horizontally */
+  height: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    margin-left: 0px;
+    text-align: center;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center align vertically */
+    justify-content: center; /* Center align horizontally */
+    height: 100%; /* Ensure the div takes full height of its container */
+  }
+}

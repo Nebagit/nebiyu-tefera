@@ -1,0 +1,141 @@
+/* Updated CSS for the Testimonial Slider */
+
+.section__title {
+  font-size: 32px; /* Adjust the font size for the title */
+  font: bold; /* Set the title as bold */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px; /* Adjust top padding as needed */
+  height: 100%;
+}
+
+.section__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px; /* Adjust top padding as needed */
+  height: 100%;
+  font-size: 18px; /* Adjust the font size for the subtitle */
+  font: bold; /* Set the subtitle as bold */
+  color: #666; /* Update the color for better readability */
+}
+
+.testimonial__content {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust as needed */
+  /* z-index: 9999; */
+}
+
+.testimonial__navigation {
+  margin-top: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: rgb(253, 187, 18);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.testimonial__card {
+  background-color: #f9f9f9; /* Update background color */
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  text-align: center; /* Center align the content */
+}
+
+.testimonial__img {
+  width: 200px;
+  height: 200px;
+  object-fit: ; /* Update object-fit for better image display */
+  border-radius: 50%; /* Make the image circular */
+  /* margin-bottom: 10px; */
+}
+
+.recommendation-icon {
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(253, 187, 18);
+}
+
+.testimonial__name {
+  font-size: 20px; /* Increase the font size for the name */
+  font-weight: bold; /* Set the name as bold */
+  margin-bottom: 10px; /* Adjust the spacing */
+}
+
+.testimonial__description {
+  font-size: 16px; /* Decrease the font size for the description */
+  color: #555; /* Update text color for better readability */
+  margin-bottom: 10px; /* Adjust the spacing */
+}
+
+.testimonials-contact {
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Media query for devices with a maximum width of 768px (commonly used for tablets and smaller devices) */
+@media screen and (max-width: 768px) {
+  .testimonial-whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure the container takes full width */
+  }
+
+  .testimonial__content {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    width: 100%; /* Ensure the content takes full width */
+  }
+
+  .section__title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .section__subtitle {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+  }
+
+  .swiper-slider {
+    width: 100%; /* Ensure the slider takes full width */
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial__card {
+    background-color: #f9f9f9; /* Update background color */
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    text-align: center; /* Center align the content */
+  }
+
+  .testimonial__navigation {
+    margin-top: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(253, 187, 18);
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .testimonial__prev,
+  .testimonial__pause,
+  .testimonial__play,
+  .testimonial__next {
+    font-size: 30px;
+    /* margin: 0 10px; */
+  }
+}

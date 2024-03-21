@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    border-bottom: 1px dashed var(--yellow-theme-main-color);
+    z-index: 2;
+    /* Set the width to 60% */
+
+    .page-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        line-height: 1rem;
+        text-transform: capitalize;
+        color: rgb(253, 187, 18);
+        flex-grow: 1;
+    }
+
+    span {
+        svg {
+            // color: var(--yellow-theme-main-color);
+        }
+    }
+}

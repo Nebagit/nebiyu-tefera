@@ -1,0 +1,68 @@
+{
+  "homepage": "https://Nebagit.github.io/nebiyu-tefera",
+  "name": "neba-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^4.1.0",
+    "@emotion/react": "^11.11.4",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "rc-progress": "^3.2.4",
+    "react": "^18.0.0",
+    "react-awesome-reveal": "^4.2.8",
+    "react-countup": "^6.5.0",
+    "react-dom": "^18.0.0",
+    "react-google-font-loader": "^1.1.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.9.0",
+    "react-simple-animate": "^3.3.12",
+    "react-slick": "^0.30.2",
+    "react-spring": "^9.7.3",
+    "react-tsparticles": "^2.0.6",
+    "react-vertical-timeline-component": "^3.5.2",
+    "sass": "^1.50.1",
+    "smoothscroll-polyfill": "^0.4.4",
+    "styled-components": "^6.1.8",
+    "swiper": "^11.0.7",
+    "tsparticles": "^2.0.6",
+    "uil": "^4.3.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
