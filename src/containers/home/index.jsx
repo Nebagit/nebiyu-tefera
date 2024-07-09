@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Animate } from "react-simple-animate";
 import "./styles.scss"; 
 import { FaGithub, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa';
-import cvPDF from './CV/Nebiyu-Cv-senior.pdf'; 
+import cvPDF from './CV/FinalCV-neba.pdf'; 
 
 const Home = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = cvPDF;
-    link.setAttribute('download', 'Nebiyu-Cv-senior.pdf'); 
+    link.setAttribute('download', 'FinalCV-neba.pdf'); 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -17,9 +17,10 @@ const Home = () => {
 
   const phrases = [
     "Hello, I'm Nebiyu",
-    "I'm a Full Stack Developer",
+    "Computer Science Graduate(AAU)",
+    "A Full Stack Developer",
     "AI & Blockchain enthusiast",
-    "'Shape the future by creating it.'",
+    "Shape the future by creating it",
   ];
 
   const typingDelay = 80;
@@ -42,7 +43,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 3500); // Adjust the duration as necessary
+    }, 3500); 
 
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
