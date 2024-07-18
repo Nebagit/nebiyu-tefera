@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nebiyu-tefera/static/css/main.c9aaaed3.css",
-    "main.js": "/nebiyu-tefera/static/js/main.6e9506b7.js",
+    "main.css": "/nebiyu-tefera/static/css/main.7b364660.css",
+    "main.js": "/nebiyu-tefera/static/js/main.697c9dfb.js",
     "static/media/neba6.JPG": "/nebiyu-tefera/static/media/neba6.a32d61a645aa4fd2b411.JPG",
     "static/media/neba4.JPG": "/nebiyu-tefera/static/media/neba4.89bdd9d2fb3ae69a6c3b.JPG",
     "static/media/graphics-image-con.png": "/nebiyu-tefera/static/media/graphics-image-con.071ac539bca0f2b1fa77.png",
@@ -18,7 +18,7 @@
     "static/media/full-stack-net-with-mean-stack.jpg": "/nebiyu-tefera/static/media/full-stack-net-with-mean-stack.19429b41fe7289aefb7f.jpg",
     "static/media/Employee.png": "/nebiyu-tefera/static/media/Employee.ad67985d0e9da71b6fbf.png",
     "static/media/Evangadi-forum.png": "/nebiyu-tefera/static/media/Evangadi-forum.2e5a2d6d800453f01dd9.png",
-    "static/media/Nebiyu-Cv-senior.pdf": "/nebiyu-tefera/static/media/Nebiyu-Cv-senior.d028674d754941d3ae3f.pdf",
+    "static/media/FinalCV-neba.pdf": "/nebiyu-tefera/static/media/FinalCV-neba.7f9e885237e624e1c642.pdf",
     "static/media/graduation-aau.jpg": "/nebiyu-tefera/static/media/graduation-aau.b61cd8c59155c5feca18.jpg",
     "static/media/leadership.jpg": "/nebiyu-tefera/static/media/leadership.b4ba474b68d1d71da9d6.jpg",
     "static/media/meanandmern.jpg": "/nebiyu-tefera/static/media/meanandmern.ed21f50e07cf3667cae0.jpg",
@@ -29,11 +29,11 @@
     "static/media/MrsBeimnet.jpeg": "/nebiyu-tefera/static/media/MrsBeimnet.89ddf6dc8a057eecafaa.jpeg",
     "static/media/Netflix.png": "/nebiyu-tefera/static/media/Netflix.f0de71cec814ca19d7fc.png",
     "index.html": "/nebiyu-tefera/index.html",
-    "main.c9aaaed3.css.map": "/nebiyu-tefera/static/css/main.c9aaaed3.css.map",
-    "main.6e9506b7.js.map": "/nebiyu-tefera/static/js/main.6e9506b7.js.map"
+    "main.7b364660.css.map": "/nebiyu-tefera/static/css/main.7b364660.css.map",
+    "main.697c9dfb.js.map": "/nebiyu-tefera/static/js/main.697c9dfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9aaaed3.css",
-    "static/js/main.6e9506b7.js"
+    "static/css/main.7b364660.css",
+    "static/js/main.697c9dfb.js"
   ]
 }
