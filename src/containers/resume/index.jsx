@@ -9,13 +9,13 @@ import 'react-vertical-timeline-component/style.min.css'
 import { data } from "./utils";
 import './styles.scss';
 import {MdWork} from 'react-icons/md';
-import cvPDF from './CV/FinalCV-neba.pdf'; // Replace 'your_cv_file.pdf' your actual file name
+import cvPDF from './CV/FinalCV-neba.pdf'; 
 
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = cvPDF;
-    link.setAttribute('download', 'FinalCV-neba.pdf'); // Replace 'YourCVFileName.pdf' with your actual file name
+    link.setAttribute('download', 'FinalCV-neba.pdf'); 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -44,7 +44,7 @@ const Resume = () => {
         headerText="My Resume"
         icon={<BsInfoCircleFill size={40} />}
       />
-      <div className="resume__cv"><button onClick={handleDownload} className="download-button">Download CV</button></div>
+      {/* <div className="resume__cv"><button onClick={handleDownload} className="download-button">Download CV</button></div> */}
 
       <div className="timeline">
       <div className="timeline__education">

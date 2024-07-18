@@ -120,7 +120,7 @@ const Home = () => {
         <div className="home__contact-me">
           <button onClick={handleNavigateToContactMePage}>Hire Me</button>
         </div>
-        <div className="resume__cv"><button onClick={handleDownload} className="download-button">Download CV</button></div>
+        {/* <div className="resume__cv"><button onClick={handleDownload} className="download-button">Download CV</button></div> */}
 
       </Animate>
     </section>
